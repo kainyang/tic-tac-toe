@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe game</title>
+
+    <link rel='stylesheet prefetch' href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container flex-column" id="tic-tac-toe">
+
+        <h1>Tic Tac Toe</h1>
+        <div>
+            <div class="flex-column">
+                <div class="input-prepend input-append">
+                    <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+                </div>
+                <div class="input-prepend input-append">
+                    <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+                </div>
+            </div>
+            <div class="flex-column">
+                <div><a href="#" id="reset" class="btn-success btn button">Restart</a></div>
+                <div><a href="#" id="reset-score" class="btn-success btn button">Reset scores</a></div>
+            </div>
+            <div class="flex-column">
+                <form id="options">
+                    <label>Board Size:</label>
+                    <input id="boardsize_input" type="number" min="2" max="50" value="3"></input>
+                </form>
+                <button id="submit">Play/ Change</button>
+            </div>
+        </div>
+        <ul class="board flex-column" id="game">
+        </ul>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/helper.js"></script>
+</body>
+
+</html>
